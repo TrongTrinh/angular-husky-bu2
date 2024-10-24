@@ -54,5 +54,9 @@
       "prettier --write",
       "eslint --max-warnings=0"
     ]
+  },
+  "validate-branch-name": { 
+    "pattern": "^(feat|fix|hotfix|release)\\/ID-\\d+(\\/[-a-zA-Z0-9]+)?$",
+    "errorMsg": "There is something wrong with your branch name. Please follow the pattern: (feat|fix|hotfix|release)/IDK-<number>(/optional-slug)"
   }
 }

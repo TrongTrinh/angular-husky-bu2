@@ -33,5 +33,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## commit message format
 
-- @commitlint/config-angular'
-- VD message correct: feat: update code
+    - follow: @commitlint/config-angular
+    - Format: type(scope): description
+    	- Type is one of: build, ci, docs, feat, fix, perf, refactor, revert, style, test
+    	- Scope is required and can be any string, such as a component, function, or task/bug ID
+    	- Description is a string
+    - Example of a correct message: feat(screen): update code
+
+## Branch name format
+
+    - pattern: "^(feat|fix|hotfix|release)\\/ID-\\d+(\\/[-a-zA-Z0-9]+)?$"
+    	- Format: type/ID-<number>(/description)
+    		- Type is one of: feat|fix|hotfix|release
+    		- ID-<number>: is required
+    		- (/description): is optional,

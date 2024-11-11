@@ -10,4 +10,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'angular-husky-bu2';
+
+  constructor() {
+    console.log('AppComponent constructor');
+  }
 }
